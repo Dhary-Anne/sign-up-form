@@ -1,0 +1,28 @@
+:root{
+    --dark: #050505;
+    --mint-green: #98FB98;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    max-height: 100vh;
+    padding-top: 100px;
+    padding-left: 400px;
+    background-color: var(--dark);
+    color: white;
+}
+
+.middle-div{
+    display: flex;
+    padding: 50px;
+}
+.create-button{
+    color: white;
+    background-color: var(--dark);
+}
