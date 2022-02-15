@@ -1,8 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
 :root{
     --dark: #050505;
-    --mint-green: #98FB98;
+    --green: #808000;
+    --light-gray: #202020;
+    font-family: 'Roboto', sans-serif;
+}
+@font-face {
+    font-family: Norse;
+    src: url('./assets/Norse-Bold.otf');
 }
 
+@font-face {
+    font-family: Norse;
+    font-weight: bold;
+    src: url('./assets/Norse-Bold.otf');
+}
 *,
 *::before,
 *::after{
@@ -10,19 +24,116 @@
     padding: 0;
     margin: 0;
 }
+
 body{
-    max-height: 100vh;
-    padding-top: 100px;
-    padding-left: 400px;
-    background-color: var(--dark);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    height: 700px;
+    max-width: 90%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.23);
+    border-radius: 20px;
+    overflow: hidden;
+}
+ 
+/* left side  */
+.hero{
+    background-image: url(sign-up-bg.jpg);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 30%;
+}
+.logo-bg{
+    display: flex;
+    background-color: var(--light-gray);
+    height: 12vh;
+    padding: 1rem;
+    opacity: .9;
+    margin-top: 60%;
+    justify-content: center;
+    align-items: center;
     color: white;
+    font-family: 'Norse';
+    font-size: 1.5rem;
+}
+.logo-bg img{
+    width: 70%;
+    max-height: 100%;
 }
 
-.middle-div{
-    display: flex;
-    padding: 50px;
+ /* right side */
+
+main{
+    height: 100%;
+    max-width: 70%;
 }
-.create-button{
-    color: white;
+
+.main-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 20%;
+    padding-right: 20%;
+    padding-left: 10%;
+    font-family: 'Norse';
+    font-weight: 700;
+}
+.know-text{
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+fieldset{
+    border: none;
+    gap: 5rem;
+    display: flex;
+}
+.form-holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    height: 35vh;
+    gap: 0.5rem;
+    padding: 2rem 2rem; 
+    background-color: whitesmoke;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.23);
+}
+.form-holder p{
+    padding-bottom: 5%;
+    font-family: 'Norse';
+    font-weight: 550;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.6rem;
+}
+form input{
+    border-radius: 4px;
+
+}
+.input label{
+    font-size: 0.6rem;
+    font-weight: 520;
+}
+.btn-div{
+    padding-top: 5px;
+    padding-left: 8px;
+}
+button{
     background-color: var(--dark);
+    color: var(--green);
+    padding: 8px;
+    border-radius: 8px;
+    border-color: 4px solid var(--green);
+    font-family: 'Norse';
+}
+button:hover{
+    background-color: var(--green);
+    color: var(--dark);
 }

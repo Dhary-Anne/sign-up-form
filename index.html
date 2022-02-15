@@ -5,34 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Sign Up</title>
+    <title>Sign-Up</title>
 </head>
 <body>
-    <div class="top-div">
-        <p>This is a completely fake service! You know you need something <br> 
-        like this in your life to help you realize your deepest dreams.<br>
-        Sign Up <i>now</i> to get started.</p>
-        <p>You know you want to.</p>
-    </div>   
-    <div class="middle-div">
-        <form action="#" id="sign-up">
-        <p>Let's do this!</p>
-        <label for="first-name" id="first-name">FIRST NAME</label>
-        <input type="text" name="first-name" id="first-name">
-        <label for="last-name" id="last-name">LAST NAME</label>
-        <input type="text" for="last-name" name="last-name" id="last-name">
-        <label for="email" id="email">EMAIL</label>
-        <input type="email" name="email" id="email">
-        <label for="password" id="password">PASSWORD</label>
-        <input type="password" name="password" id="password">
-        <label for="conf-pass" id="conf-pass">CONFIRM PASSWORD</label>
-        <input type="password" name="conf-pass" id="conf-pass">
-        </form>
-    </div> 
-    <div class="bottom-div">
-        <button type="submit" class="create-button">Create Account</button>
-        <p>Already have an account?<a href="#">Log in</a></p>
-    </div>
+    <div class="container">
+        <div class="hero">
+            <div class="logo-bg">
+                <img src="eagle-logo.png" alt="eagle-logo">
+                <h1>Elevate</h1>
+            </div>
+        </div>
+        <main>
+            <section class="main-text">
+                <p>This is not a real online service! You know that this is exactly
+                    what you've been looking for to help you realize your deepest
+                    dreams.<br> Sign up <i>now</i> to get started.
+                </p>
+                <p class="know-text">You <i>know</i> you want to.</p>
+            </section>
+            <form action="#">
+                <div class="form-holder">
+                    <p>Let's do this!</p>
+                    
+                    <fieldset>
+                        <div class="input">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" name="first-name" id="first-name">
+                        </div>
+                    </fieldset>
 
+                    <fieldset>
+                        <div class="input">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" name="last-name" id="last-name">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="input">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="input">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="number" name="phone-number" id="phone-number">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="input">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="input">
+                            <label for="password-conf">CONFIRM PASSWORD</label>
+                            <input type="password" name="password-conf" id="password-conf"> 
+                        </div>
+                    </fieldset>
+
+                </div>
+                
+                <div class="btn-div">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
+            </form>
+        </main>
+    </div>
+    
 </body>
 </html>
