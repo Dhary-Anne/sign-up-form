@@ -76,8 +76,8 @@ main{
 .main-text{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding-top: 20%;
+    justify-content: space-between;
+    padding-top: 10%;
     padding-right: 20%;
     padding-left: 10%;
     font-family: 'Norse';
@@ -89,33 +89,38 @@ main{
 }
 fieldset{
     border: none;
-    gap: 5rem;
+    gap: 2rem;
     display: flex;
+    flex-direction: column;
 }
 .form-holder{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 10px;
-    height: 35vh;
-    gap: 0.5rem;
+    height: 24vh;
+    gap: 0.2rem;
     padding: 2rem 2rem; 
     background-color: whitesmoke;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.23);
 }
-.form-holder p{
-    padding-bottom: 5%;
+.lets-text{
+    padding-bottom: 3%;
     font-family: 'Norse';
     font-weight: 550;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12px;
 }
 .input{
     display: flex;
     flex-direction: column;
     font-size: 0.6rem;
+    width: 10rem;
 }
 form input{
     border-radius: 4px;
-
 }
 .input label{
     font-size: 0.6rem;
